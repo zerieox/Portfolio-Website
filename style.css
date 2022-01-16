@@ -1,0 +1,445 @@
+html{
+    scroll-behavior: smooth;
+}
+h1{
+    font-size: 3rem;
+    font-family: 'Montserrat';
+}
+.max-width{
+    max-width: 1300px;
+    margin: auto;
+}
+a:hover{
+    color: white !important;
+    
+}
+/* similar styling */
+section{
+    padding: 100px 0;
+}
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.about, .projects, .contact, footer{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.about .about-content,
+.projects .projects-content
+/* ,.contact .contact-content{ */{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    font-family: 'Ubuntu', sans-serif;
+}
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+/* navbar */
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 1rem 0;
+    font-family: 'Ubuntu';
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+.navbar .logo a{
+    font-size: 25px;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar.sticky-top{
+    padding: 15px 0;
+    background: black;
+}
+
+.navbar-light .menu .nav-link{
+    color: rgba(255, 255, 255, 0.5);
+}
+.navbar .menu li a{
+    display: block;
+    color: rgb(88, 88, 88);
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+}
+.navbar-light .navbar-brand{
+    color: rgba(255, 255, 255, 0.5);
+
+}
+.nav-link:hover{
+    color: white;
+}
+/* menu btn */
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: rgb(0, 204, 255);
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn.show{
+    opacity:1;
+    pointer-events: auto;
+}
+/* home */
+code{
+    color: rgb(218, 218, 218);
+}
+
+.home{
+    display: flex;
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    min-height: 500px;
+    font-family: 'Montserrat';
+    background-attachment: fixed;
+}
+.title-code{
+    margin-bottom: 21rem;
+}
+header.home{
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 72px);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000 100%),
+                                 url("images/bg.jpg") no-repeat center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-bottom: 500px;
+}
+
+/*about section*/
+section{
+    padding: 100px 0;
+}
+.about, .projects{
+    font-family: 'Montserrat', sans-serif;
+}
+.about-color{
+    background-color: black;
+}
+section .title{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+}
+.about .about-content{
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left{
+    width: 45%;
+}
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+.about .about-content .right{
+    width: 55%;
+}
+.about .about-content .right .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: White;
+}
+.about .about-content .right .text span{
+    color: rgb(0, 204, 255);
+}
+.about .about-content .right p{
+    text-align: justify;
+    color: rgb(204, 204, 204);
+}
+
+/* projects section */
+.projects{
+    color: #fff;
+    background-color: #111;
+}
+.projects .title::before{
+    background: #fff;
+}
+.projects .projects-content .card{
+    width: calc(33% - 20px);
+    background-color: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 20px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+.projects .projects-content .card .box{
+    transition: all 0.3s ease;
+}
+.projects .projects-content .card:hover{
+    background: rgb(0, 204, 255);
+}
+.projects .projects-content .card:hover .box{
+
+    transform: scale(1.05);
+}
+.projects .projects-content .card i{
+    color:rgb(0, 204, 255);
+    font-size: 50px;
+    transition: color 0.3s ease;
+}
+.projects .projects-content .card:hover i{
+   color: #fff; 
+}
+.projects .projects-content .card .text{
+    font-size: 25px;
+    font-weight: 500;
+    margin: 10px 0 7px 0;
+}
+
+/* contact section */
+.contact-section{
+    padding-top: 10rem;
+    padding-bottom: calc(10rem - 72px);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 50%, #000 80%), 
+                                url("images/bg2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+}
+.contact .contact-section .column{
+    width: calc(50% -30px);
+    width: 100%;
+    margin-bottom: 35px;
+}
+.contact-text{
+    color: rgb(204, 204, 204);
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.contact form .fields{
+    display: flex;
+}
+.contact form .fields,
+.contact form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact form .name{
+    margin-right: 10px;
+}
+.contact form .email{
+    margin-left: 10px;
+}
+
+.contact form .field input,
+.contact form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    margin-top: 10px;
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+.contact form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+.contact form .button{
+    height: 47px;
+    width: 170px;
+
+}
+.contact form .button button{
+    width: 100%;
+    height: 100%;
+    border: 2px solid rgb(0, 204, 255);
+    background: rgb(0, 204, 255);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+.contact form .button button:hover{
+    color: rgb(0, 204, 255);
+    background: none;
+}
+
+/* footer section */
+footer{
+    background: #222;
+    padding: 20px 23px;
+    color: #fff;
+}
+footer{
+    background: #222;
+    padding: 15px 23px;
+    color: white;
+    text-align: center;
+}
+footer span a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+footer span a:hover{
+    text-decoration: underline;
+}
+
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+footer ul li{
+    position: relative;
+    display: block;
+    font-size: 30px;
+    height: 60px;
+    width: 60px;
+    background: #000000;
+    line-height: 60px;
+    border-radius: 50%;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: .5s;
+  }
+footer ul li:hover{
+   color:rgb(255, 255, 255);
+   background-color: black;
+}
+footer a{
+    color:rgb(0, 204, 255);
+}
+
+@media(max-width:1300px){
+    .home .max-width{
+        margin-left:  0px;
+    }
+}
+@media(max-width:1104px){
+    .about .about-content .left img{
+        height: 400px;
+        width: 400px;
+    }
+}
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 947px){
+    .max-width{
+        max-width: 930px;
+    }
+    .about .about-content .column{
+        width: 100%;
+    }
+    .about .about-content .left{
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+    }
+    .about .about-content .right{
+        flex: 100%;
+    }
+    .projects .projects-content .card{
+        width: calc(50% - 10px);
+        margin-bottom: 20px;
+    }
+}
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+    .home .home-content .text-2{
+        font-size: 60px;
+    }
+    .home .home-content .text-3{
+        font-size: 32px;
+    }
+    .home .home-content a{
+        font-size: 20px;
+    }
+    .projects .projects-content .card{
+        width: 100%;
+    }
+}
+@media (max-width: 500px) {
+
+    /* .contact .right form .fields{
+        flex-direction: column;
+    }
+    .contact .right form .name,
+    .contact .right form .email{
+        margin: 0;
+    } */
+
+    .right form .error-box{
+       width: 150px;
+    }
+    .scroll-up-btn{
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
+}
