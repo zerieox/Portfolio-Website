@@ -1,3 +1,3 @@
 # Portfolio-Website
-A personal website
-Used HTML, CSS with a bit Boostrap, and JavaScript
+A personal website made
+using HTML, CSS with a bit Boostrap, and JavaScript
